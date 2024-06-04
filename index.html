@@ -46,6 +46,7 @@
 
 
 <style>
+
 @font-face {
     font-family: 'Pretendard-Regular';
     src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
@@ -61,6 +62,8 @@ body {
 
 .text-muted {
     color: #777;
+    font-size: 16px;
+/*     margin-bottom: 5px; */
 }
 
 .text-primary {
@@ -355,6 +358,7 @@ header .intro-text .intro-heading {
     font-weight: 700;
     line-height: 50px;
 /*     text-shadow: 3px 3px 5px gray; */
+	text-shadow: 3px 3px 10px black;
 }
 
 @media(min-width:768px) {
@@ -409,6 +413,7 @@ section h3.section-subheading {
 .service-heading {
     margin: 15px 0;
     text-transform: none;
+    font-size: 25px;
 }
 
 #portfolio .portfolio-item {
@@ -919,8 +924,61 @@ body {
     webkit-tap-highlight-color: #1ee2e7;
 }
 
-.wall {
-/* height: 110px; */
+.subheading{
+font-size: 20px;
+font-weight: 600;
+}
+
+.name {
+font-size: 25px;
+}
+
+.name-text {
+font-size: 20px;
+}
+
+.myimage{
+/* display: inline; */
+height: 410px;
+}
+
+
+.image-tag {
+/* width: 100%; */
+display: flex;
+
+/* margin-left: auto; */
+/* margin-right: auto; */
+margin-top: 40px;
+margin-bottom: 20px;
+
+justify-content: center;
+/* text-align: center; */
+}
+
+.image-text {
+font-size: 20px;
+padding-left: 50px;
+padding-right: 50px;
+padding-top: 80px;
+
+border: 2px solid #ededed;
+border-left: 1px solid #fff;
+
+border-radius: 0px 7px 7px 0px;
+}
+
+.image-text-main {
+/* padding-left: 50px; */
+/* padding-top: 10px; */
+
+font-size: 24px;
+
+margin-bottom: 50px;
+
+color:#1ee2e7;
+
+font-weight: 600;
 }
 </style>
 
@@ -959,7 +1017,7 @@ $('.navbar-collapse ul li a').click(function() {
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Celine Is Awesome</a>
+                <a class="navbar-brand page-scroll" href="#page-top">ShinGyuSub Portfolio</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -969,16 +1027,16 @@ $('.navbar-collapse ul li a').click(function() {
                         <a href="#page-top"></a>
                     </li>
                     <li class="">
-                        <a class="page-scroll" href="#services">Services</a>
+                        <a class="page-scroll" href="#team">Information</a>
+                    </li>
+                    <li class="">
+                        <a class="page-scroll" href="#services">About Me</a>
+                    </li>
+                    <li class="">
+                        <a class="page-scroll" href="#about">Skill Stacks</a>
                     </li>
                     <li class="">
                         <a class="page-scroll" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="">
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    <li class="">
-                        <a class="page-scroll" href="#team">Team</a>
                     </li>
                     <li class="">
                         <a class="page-scroll" href="#contact">Contact</a>
@@ -1003,6 +1061,63 @@ $('.navbar-collapse ul li a').click(function() {
             </div>
         </div>
     </header>
+    
+    
+    <!-- Team Section -->
+    <section id="team" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Information</h2>
+                </div>
+            </div>
+            <div class="image-tag"><img class="myimage" src="https://zircon-colby-46b.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F0b763b00-41d3-40c3-ae5e-5f210d5446e6%2Fc41c7b1b-c3ca-452b-b038-398ad0ddbae5%2Fcf42b0aa-121a-48f5-a782-84c8ad69126d.png?table=block&id=112516fc-12ff-4291-bf11-a781444f0600&spaceId=0b763b00-41d3-40c3-ae5e-5f210d5446e6&width=670&userId=&cache=v2">
+            
+            <span class="image-text"><div class="image-text-main">두려움을 성취감으로 바꾸는 개발자.</div>문제를 해결했을 때의 성취감은 <br/><br/> 다음 문제를 두렵지 않게 도와주는 <br/><br/> 원동력이 되었습니다.</span>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="team-member">
+<!--                         <img src="http://www.mycatspace.com/wp-content/uploads/2013/08/adopting-a-cat.jpg" class="img-responsive img-circle" alt=""> -->
+                        <h4 class="name">이름</h4>
+                        <p class="text-muted"><br/></p>
+                        <p class="text-muted name-text">신규섭</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+<!--                         <img src="http://www.mycatspace.com/wp-content/uploads/2013/08/adopting-a-cat.jpg" class="img-responsive img-circle" alt=""> -->
+                        <h4 class="name">링크</h4>
+                        <p class="text-muted"><br/></p>
+                        <p class="text-muted"></p>
+                        <ul class="list-inline social-buttons">
+                            <li><a class="page-scroll" href="#contact" style="text-decoration:none;">📧</a>
+                            </li>
+                            <li><a href="#" style="text-decoration:none;">🐱</a>
+                            </li>
+                            <li><a href="#" style="text-decoration:none;">✅</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+<!--                         <img src="http://www.mycatspace.com/wp-content/uploads/2013/08/adopting-a-cat.jpg" class="img-responsive img-circle" alt=""> -->
+                        <h4 class="name">생일</h4>
+                        <p class="text-muted"><br/></p>
+                        <p class="text-muted name-text">1995.09.10</p>
+                        <ul class="list-inline social-buttons">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+<!--             <div class="row"> -->
+<!--                 <div class="col-lg-8 col-lg-offset-2 text-center"> -->
+<!--                     <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p> -->
+<!--                 </div> -->
+<!--             </div> -->
+        </div>
+    </section>
 
     <!-- Services Section -->
     <section id="services">
@@ -1053,6 +1168,102 @@ $('.navbar-collapse ul li a').click(function() {
                     </span>
                     <h4 class="service-heading">의사소통을 중요하게 생각해요</h4>
                     <p class="text-muted">협업 상황의 의견 전달은 업무 완성에 있어서 큰 역할을 한다고 생각해요.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Skill Stacks</h2>
+                    <h3 class="section-subheading text-muted">기술 스택</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-image">
+							<h4>
+							<br/>Back-end
+							</h4>
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h2></h2>
+                                    <div class="subheading">JAVA</div>
+                                    <div class="text-muted">ㆍSpring Boot ㆍJPA ㆍJSP</div>
+                                     <div class="text-muted">ㆍMybatis ㆍlombok ㆍtomcat</div>
+                                    <div class="subheading" style="margin-top:10px;">Python</div>
+                                    <div class="subheading" style="margin-top:10px;">C</div>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted"></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+							<h4>
+							<br/>Front-end
+							</h4>
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h2></h2>
+                                    <div class="subheading">HTML</div>
+                                    <div class="subheading" style="margin-top:10px;">CSS</div>
+                                    <div class="text-muted">ㆍTailwind ㆍdaisyUI</div>
+                                    <div class="subheading" style="margin-top:10px;">JavaScript</div>
+                                    <div class="text-muted">ㆍjQuery ㆍReact</div>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted"></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                             <div class="timeline-image">
+							<h4>
+							<br/>DB
+							</h4>
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                	<br/>
+                                	<br/>
+                                	<br/>
+                                    <div class="subheading" style="margin-top:10px;">MySQL</div>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted"></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+							<h4>
+							<br/>Other
+							</h4>
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                <br/>
+                                	<br/>
+                                    <div class="subheading">OS</div>
+                                    <div class="text-muted">ㆍLinux</div>
+                                    <div class="subheading">IDE</div>
+                                    <div class="text-muted">ㆍEclipse ㆍIntelliJ ㆍVisual Studio</div>  
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted"></p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -1156,150 +1367,6 @@ $('.navbar-collapse ul li a').click(function() {
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">About</h2>
-                    <h3 class="section-subheading text-muted">Ajmal, I need help to learn how to tweak this part. I don't want this timeline crap. Haha.</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <ul class="timeline">
-                        <li>
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>2009-2011</h4>
-                                    <h4 class="subheading">Our Humble Beginnings</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/2.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>March 2011</h4>
-                                    <h4 class="subheading">An Agency is Born</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/3.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>December 2012</h4>
-                                    <h4 class="subheading">Transition to Full Service</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/4.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>July 2014</h4>
-                                    <h4 class="subheading">Phase Two Expansion</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <h4>Be Part
-                                    <br>Of Our
-                                    <br>Story!</h4>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Team Section -->
-    <section id="team" class="bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Our Amazing Team</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="http://www.mycatspace.com/wp-content/uploads/2013/08/adopting-a-cat.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Kay Garland</h4>
-                        <p class="text-muted">Lead Designer</p>
-                        <ul class="list-inline social-buttons">
-                            <li><a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="http://www.mycatspace.com/wp-content/uploads/2013/08/adopting-a-cat.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Larry Parker</h4>
-                        <p class="text-muted">Lead Marketer</p>
-                        <ul class="list-inline social-buttons">
-                            <li><a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="http://www.mycatspace.com/wp-content/uploads/2013/08/adopting-a-cat.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Diana Pertersen</h4>
-                        <p class="text-muted">Lead Developer</p>
-                        <ul class="list-inline social-buttons">
-                            <li><a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Clients Aside -->
    
