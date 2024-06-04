@@ -2,12 +2,14 @@
 
 <title>신규섭 포트폴리오</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
 <!-- 테일윈드 불러오기 -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" />
 
 <!-- daisy ui 불러오기 -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/daisyui/4.6.1/full.css" />
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/daisyui/4.6.1/full.css" /> -->
 
 <!-- 폰트어썸 불러오기 -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
@@ -44,15 +46,17 @@
 
 
 <style>
-/*!
- * Start Bootstrap - Agency Bootstrap Theme (https://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
 
 body {
     overflow-x: hidden;
-    font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Pretendard-Regular';
+    font-weight: 400;
 }
 
 .text-muted {
@@ -97,8 +101,8 @@ h3,
 h4,
 h5,
 h6 {
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+/*     text-transform: uppercase; */
+    font-family: 'Pretendard-Regular';
     font-weight: 700;
 }
 
@@ -116,8 +120,8 @@ h6 {
 
 .btn-primary {
     border-color: #1ee2e7;
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+/*     text-transform: uppercase; */
+    font-family: 'Pretendard-Regular';
     font-weight: 700;
     color: #fff;
     background-color: #1ee2e7;
@@ -164,11 +168,12 @@ fieldset[disabled] .btn-primary.active {
 }
 
 .btn-xl {
-    padding: 20px 40px;
+/*     padding: 20px 40px; */
+/* 	padding-bottom: 30px; */
     border-color: #1ee2e7;
     border-radius: 3px;
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+/*     text-transform: uppercase; */
+    font-family: 'Pretendard-Regular';
     font-size: 18px;
     font-weight: 700;
     color: #fff;
@@ -221,7 +226,7 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-brand {
-    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+    font-family: 'Pretendard-Regular';
     color: #1ee2e7;
 }
 
@@ -251,8 +256,8 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .nav li a {
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+/*     text-transform: uppercase; */
+    font-family: 'Pretendard-Regular';
     font-weight: 400;
     letter-spacing: 1px;
     color: #fff;
@@ -311,13 +316,21 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url(https://unsplash.imgix.net/uploads%2F14115408840644deb16b0%2F2dc933e3?q=75&fm=jpg&auto=format&s=7f43646e4d26049c6c39890afb2e5ced);
-    background-position: center center;
-    background-repeat: none;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+    background-image: url(https://velog.velcdn.com/images/lysepten/post/d4508cae-3352-4c78-a154-9f8a240f82f6/image.PNG);
+
+    	background-size: cover;
+	/* 이미지가 반복되지 않도록 설정 */
+	background-repeat: no-repeat;
+	/* 이미지의 위치를 가운데 정렬 */
+	background-position: center;
+	/* 선택적으로 이미지에 대한 기타 스타일을 지정할 수 있습니다. */
+	/* 페이지의 전체 높이를 이미지의 높이와 동일하게 설정하여 스크롤이 가능하도록 합니다. */
+	height: 100vh;
+	/* overflow를 숨겨서 스크롤이 생기지 않도록 합니다. */
+	overflow: auto;
+	/* 배경 이미지 아래쪽에 간격 추가 */
+	margin-bottom: 100px;
+	/* 조절하고 싶은 간격(px)을 지정하세요. */
 }
 
 header .intro-text {
@@ -327,19 +340,21 @@ header .intro-text {
 
 header .intro-text .intro-lead-in {
     margin-bottom: 25px;
-    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Pretendard-Regular';
     font-size: 22px;
-    font-style: italic;
+/*     font-style: italic; */
     line-height: 22px;
+    text-shadow: 3px 3px 10px black;
 }
 
 header .intro-text .intro-heading {
     margin-bottom: 25px;
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Pretendard-Regular';
     font-size: 50px;
     font-weight: 700;
     line-height: 50px;
+/*     text-shadow: 3px 3px 5px gray; */
 }
 
 @media(min-width:768px) {
@@ -350,16 +365,16 @@ header .intro-text .intro-heading {
 
     header .intro-text .intro-lead-in {
         margin-bottom: 25px;
-        font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-family: 'Pretendard-Regular';
         font-size: 40px;
-        font-style: italic;
+/*         font-style: italic; */
         line-height: 40px;
     }
 
     header .intro-text .intro-heading {
         margin-bottom: 50px;
-        text-transform: uppercase;
-        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+/*         text-transform: uppercase; */
+        font-family: 'Pretendard-Regular';
         font-size: 75px;
         font-weight: 700;
         line-height: 75px;
@@ -379,7 +394,7 @@ section h2.section-heading {
 section h3.section-subheading {
     margin-bottom: 75px;
     text-transform: none;
-    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Pretendard-Regular';
     font-size: 16px;
     font-style: italic;
     font-weight: 400;
@@ -458,7 +473,7 @@ section h3.section-subheading {
 
 #portfolio .portfolio-item .portfolio-caption p {
     margin: 0;
-    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Pretendard-Regular';
     font-size: 16px;
     font-style: italic;
 }
@@ -728,29 +743,29 @@ section#contact .form-control:focus {
 }
 
 section#contact::-webkit-input-placeholder {
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+/*     text-transform: uppercase; */
+    font-family: 'Pretendard-Regular';
     font-weight: 700;
     color: #bbb;
 }
 
 section#contact:-moz-placeholder {
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+/*     text-transform: uppercase; */
+    font-family: 'Pretendard-Regular';
     font-weight: 700;
     color: #bbb;
 }
 
 section#contact::-moz-placeholder {
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+/*     text-transform: uppercase; */
+    font-family: 'Pretendard-Regular';
     font-weight: 700;
     color: #bbb;
 }
 
 section#contact:-ms-input-placeholder {
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+/*     text-transform: uppercase; */
+    font-family: 'Pretendard-Regular';
     font-weight: 700;
     color: #bbb;
 }
@@ -765,17 +780,17 @@ footer {
 }
 
 footer span.copyright {
-    text-transform: uppercase;
+/*     text-transform: uppercase; */
     text-transform: none;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Pretendard-Regular';
     line-height: 40px;
 }
 
 footer ul.quicklinks {
     margin-bottom: 0;
-    text-transform: uppercase;
+/*     text-transform: uppercase; */
     text-transform: none;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Pretendard-Regular';
     line-height: 40px;
 }
 
@@ -833,7 +848,7 @@ ul.social-buttons li a:active {
 
 .portfolio-modal .modal-content p.item-intro {
     margin: 20px 0 30px;
-    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Pretendard-Regular';
     font-size: 16px;
     font-style: italic;
 }
@@ -903,6 +918,10 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #1ee2e7;
 }
+
+.wall {
+/* height: 110px; */
+}
 </style>
 
 <script>
@@ -970,14 +989,17 @@ $('.navbar-collapse ul li a').click(function() {
         </div>
         <!-- /.container-fluid -->
     </nav>
+    
+   <div class="wall"></div>
 
     <!-- Header -->
     <header>
+<!--     <img src="https://blog.kakaocdn.net/dn/Jmswl/btsHN04Q7rp/Qp3vpznQc2C2eZYaL8QgJK/img.jpg"> -->
         <div class="container">
             <div class="intro-text">
-                <div class="intro-lead-in">Hello Errbody</div>
-                <div class="intro-heading">Yes Mel, Ajmal, Chien, Junne maybe and Syok.</div>
-                <a href="#services" class="page-scroll btn btn-xl">Aku Bukan Sempit</a>
+                <div class="intro-lead-in">👋 안녕하세요, 웹개발자 신규섭 입니다.</div>
+                <div class="intro-heading">a developer who turns fear into accomplishment.</div>
+                <a href="#services" class="page-scroll btn btn-xl">About Me</a>
             </div>
         </div>
     </header>
@@ -987,34 +1009,50 @@ $('.navbar-collapse ul li a').click(function() {
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Services</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading">About Me</h2>
+                    <h3 class="section-subheading text-muted">추구하는 개발 방향</h3>
                 </div>
             </div>
+<!--             첫번째 row -->
             <div class="row text-center">
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="glyphicon glyphicon-tree-conifer"></i>
+<!--                         <i class="fa fa-circle fa-stack-2x text-primary"></i> -->
+<!--                         <i class="glyphicon glyphicon-tree-conifer"></i> -->
+                        <div>🖥️</div>
                     </span>
-                    <h4 class="service-heading">Here is a pokok</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <h4 class="service-heading">발전하는 개발이 좋아요</h4>
+                    <p class="text-muted">유지/보수도 좋지만 새롭게 개발하는 업무가 좋아요.</p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="glyphicon glyphicon-heart"></i>
+<!--                         <i class="fa fa-circle fa-stack-2x text-primary"></i> -->
+<!--                         <i class="glyphicon glyphicon-heart"></i> -->
+                        <div>👀</div>
                     </span>
-                    <h4 class="service-heading">Here's a heart</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <h4 class="service-heading">집중 할 수 있는 환경이 좋아요</h4>
+                    <p class="text-muted">어느 환경에서도 적응을 잘 하는 편이지만 방해받지 않는 환경에서 업무를 진행하면 안정을 느껴요.</p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="glyphicon glyphicon-tint"></i>
+<!--                         <i class="fa fa-circle fa-stack-2x text-primary"></i> -->
+<!--                         <i class="glyphicon glyphicon-tint"></i> -->
+						<div>✨</div>
                     </span>
-                    <h4 class="service-heading">Waterfall maybe?</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <h4 class="service-heading">호기심이 많고 새로운걸 좋아해요</h4>
+                    <p class="text-muted">새로운 기술을 배우는것에 매력을 느껴요.</p>
+                </div>
+            </div>
+<!--             row 분리 -->
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+<!--                         <i class="fa fa-circle fa-stack-2x text-primary"></i> -->
+<!--                         <i class="glyphicon glyphicon-tint"></i> -->
+						<div>👨‍👩‍👧‍👧</div>
+                    </span>
+                    <h4 class="service-heading">의사소통을 중요하게 생각해요</h4>
+                    <p class="text-muted">협업 상황의 의견 전달은 업무 완성에 있어서 큰 역할을 한다고 생각해요.</p>
                 </div>
             </div>
         </div>
@@ -1037,7 +1075,7 @@ $('.navbar-collapse ul li a').click(function() {
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="https://unsplash.imgix.net/uploads%2F1411419068566071cef10%2F7562527b?q=75&w=1080&h=1080&fit=max&fm=jpg&auto=format&s=240c45655f09c546232a6f106688e502" class="img-responsive" alt="">
+                        <img src="https://blog.kakaocdn.net/dn/Jmswl/btsHN04Q7rp/Qp3vpznQc2C2eZYaL8QgJK/img.jpg" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
                         <h4>Round Icons</h4>
