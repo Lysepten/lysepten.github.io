@@ -2,6 +2,8 @@
 
 <title>신규섭 포트폴리오</title>
 
+<!-- 폰트어썸 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 <!-- 테일윈드 불러오기 -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" />
@@ -943,16 +945,13 @@ border-radius: 7px 0px 0px 7px;
 
 
 .image-tag {
-/* width: 100%; */
 display: flex;
 
-/* margin-left: auto; */
-/* margin-right: auto; */
 margin-top: 40px;
 margin-bottom: 20px;
 
 justify-content: center;
-/* text-align: center; */
+
 }
 
 .image-text {
@@ -968,8 +967,6 @@ border-radius: 0px 7px 7px 0px;
 }
 
 .image-text-main {
-/* padding-left: 50px; */
-/* padding-top: 10px; */
 
 font-size: 24px;
 
@@ -979,6 +976,33 @@ color:#1ee2e7;
 
 font-weight: 600;
 }
+
+.down-bar{
+text-align: center;
+}
+
+@media(max-width:768px) {
+	.image-tag {
+flex-direction: column;
+    }
+}
+
+@media(max-width:768px) {
+	.myimage {
+border-radius: 7px 7px 0px 0px;
+    }
+}
+
+@media(max-width:768px) {
+	.image-text {
+border-top: 1px solid #fff;
+border: 2px solid #ededed;
+border-radius: 0px 0px 7px 7px;
+padding-bottom: 30px;
+padding-top: 30px;
+    }
+}
+
 </style>
 
 <script>
@@ -1060,8 +1084,7 @@ $('.navbar-collapse ul li a').click(function() {
             </div>
         </div>
     </header>
-    
-    
+
     <!-- Team Section -->
     <section id="team" class="bg-light-gray">
         <div class="container">
@@ -1110,11 +1133,9 @@ $('.navbar-collapse ul li a').click(function() {
                     </div>
                 </div>
             </div>
-<!--             <div class="row"> -->
-<!--                 <div class="col-lg-8 col-lg-offset-2 text-center"> -->
-<!--                     <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p> -->
-<!--                 </div> -->
-<!--             </div> -->
+        </div>
+        <div class="down-bar">
+        <a href="#services" class="page-scroll btn btn-xl portfolio-scroll-btn"><i class="fa-solid fa-arrow-down"></i></a>
         </div>
     </section>
 
@@ -1127,7 +1148,7 @@ $('.navbar-collapse ul li a').click(function() {
                     <h3 class="section-subheading text-muted">추구하는 개발 방향</h3>
                 </div>
             </div>
-<!--             첫번째 row -->
+<!--             첫번째 row -->	
             <div class="row text-center">
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
@@ -1170,7 +1191,11 @@ $('.navbar-collapse ul li a').click(function() {
                 </div>
             </div>
         </div>
+        <div class="down-bar">
+        <a href="#about" class="page-scroll btn btn-xl portfolio-scroll-btn"><i class="fa-solid fa-arrow-down"></i></a>
+        </div>
     </section>
+    
 
  <!-- About Section -->
     <section id="about">
@@ -1267,6 +1292,9 @@ $('.navbar-collapse ul li a').click(function() {
             </div>
         </div>
     </section>
+        <div class="down-bar">
+        <a href="#portfolio" class="page-scroll btn btn-xl portfolio-scroll-btn"><i class="fa-solid fa-arrow-down"></i></a>
+        </div>
 
     <!-- Portfolio Grid Section -->
     <section id="portfolio" class="bg-light-gray">
